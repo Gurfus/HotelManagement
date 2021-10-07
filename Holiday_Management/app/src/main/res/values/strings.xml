@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Holiday Management</string>
+    <string name="hello_blank_fragment">Inici Login</string>
+    <string name="user_fragment">Usuari</string>
+    <string name="pwd_fragment">Contrasenya</string>
+    <string name="sesion_fragment">Iniciar Login</string>
+    <string name="registrar_fragment">Registrar-se</string>
+    <string name="names_fragment">Nom</string>
+    <string name="title_activity_in_app">InApp</string>
+    <string name="registrar_me">Registrar-me</string>
+    <string name="logout">LogOut</string>
+    <string name="inici_correcte">Inici correcte</string>
+    <string name="benvingut">Benvingut</string>
+    <string-array name="pistes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="title_activity_ubicacio">Map</string>
+</resources>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4E3D5"
+    tools:context=".Registre">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="310dp"
+        android:layout_height="450dp"
+
+        android:background="#C8E6C9"
+        android:hapticFeedbackEnabled="true"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_marginLeft="8dp"
+                android:text="Reserva Pista"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imgPista"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="270dp"
+
+                tools:srcCompat="@drawable/tennis">
+
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="100dp"
+                android:layout_height="390dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center_vertical"
+                    android:text="Dia: "
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center_vertical"
+                    android:text="Hora Inici: "
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center_vertical"
+                    android:text="Hora final: "
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtTlf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center_vertical"
+                    android:text="Numero Pista: "
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="390dp"
+                android:layout_marginTop="60dp"
+                android:layout_toRightOf="@id/lay1"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/diaRes"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:textIsSelectable="true"
+                    android:textSize="14dp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/horaIni"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:inputType="datetime"
+                    android:textSize="14dp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/horaFin"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:inputType="datetime"
+                    android:textSize="14dp">
+
+                </EditText>
+
+                <Spinner
+                    android:id="@+id/idPista"
+                    android:layout_width="100dp"
+                    android:layout_height="44dp"
+                    android:inputType="numberSigned"
+                    android:textSize="14dp">
+
+                </Spinner>
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="460dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="370dp"
+                android:background="@drawable/button_back">
+
+                <TextView
+                    android:id="@+id/txtreservar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Reservar"
+                    android:textSize="15dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/statusReserva"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
